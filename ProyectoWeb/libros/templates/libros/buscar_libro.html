@@ -1,0 +1,147 @@
+{% extends "ProyectoWebApp/base.html" %}
+   
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+<!------ Include the above in your HEAD tag ---------->
+
+
+	<div class="container">
+    	<div class="row g-2">
+      		<div class="col-12">
+				<div class="p-3 border bg-light">
+					<form action=buscar method ="GET">
+							
+						<div id="custom-search-input">
+							<div class="input-group col-md-12">
+								<input type="text" class="form-control" placeholder="Buscar..." name="buscar">
+									<span class="input-group-list" >
+									<i class="icon icon-search"> </i>
+									<button type="submit" class="boton btn-success"> Buscar</button>
+								</span>
+
+							</div>
+
+						</div>
+
+					</form>	
+
+				</div>
+     		</div>
+		</div>
+
+		<div class="row g-2">
+			<div class="col-12">
+				<div class="container">
+					<div class="p-1 border bg-light">
+						<div class="row">
+															
+							<div class=" col-sm-2 ">
+								<a href="clasemasoneria"> 
+									<img  src="{% static 'ProyectoWebApp/img/fig0010.jpg'%}" width="100" height="100" title="MASONERIA">
+								</a>
+								
+							</div>
+
+							
+							<div class="col-sm-2" >
+								<a href="clasereligiosos"> 
+									<img  src="{% static 'ProyectoWebApp/img/fig0011.jpg'%}" width="100" height="100" title="RELIGIOSOS">
+								</a>
+							</div>
+
+
+							<div class="col-sm-2">
+								<a href="{% url 'Home' %}"> 
+									<img  src="{% static 'ProyectoWebApp/img/fig0012.jpg'%}" width="100" height="100" title="CIVILIZACIONES ANTIGUAS">
+								</a>
+							</div>
+
+							<div class=" col-sm-2">
+								<a href="{% url 'Home' %}"> 
+									<img  src="{% static 'ProyectoWebApp/img/fig0013.jpg'%}" width="100" height="100" title="UNIVERSO">
+								</a>
+							</div>
+							<div class="col-sm-2" >
+								<a href="{% url 'Home' %}"> 
+									<img  src="{% static 'ProyectoWebApp/img/fig0014.jpg'%}" width="100" height="100" title="FILOSOFIA">
+								</a>
+							</div>
+							<div class="col-sm-2">
+								<a href="{% url 'Home' %}"> 
+									<img  src="{% static 'ProyectoWebApp/img/fig0015.jpg'%}" width="100" height="100" title="GEOGRAFIA">
+								</a>
+							</div>
+
+						</div>
+					</div>
+					
+				</div>	
+			
+			</div>
+		</div>
+
+			
+
+    	
+  	</div>
+
+
+
+
+
+<section>
+
+
+		<div class="container">
+    		<div class="row g-2">
+      			<div class="col-12">
+					<div class="p-3 border bg-light">
+	
+						<div class="card bg-light">
+					
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th>Titulo Libro</th>
+										<th>Autor</th>									
+									</tr>
+								</thead>
+								<tbody>
+									{% if form %}	
+										{% for libro in form %}	
+											<tr>
+												<td>  <a class="nav-link text-uppercase text-expanded" href="{{ libro.libro_fuente.url }}" target="blank"> {{ libro.titulo_libro }}</a>	</td>		
+												
+												<td> {{ libro.autor }}	</td>
+												
+												
+												
+											</tr>
+										{% endfor %}
+									{% else %}
+										<p><b><h5>  &nbsp; </h5></b></p>	
+																	
+									{% endif %}					
+
+								</tbody>
+
+							</table>
+
+									
+		
+						</div>  
+					</div>
+				</div>
+			</div>
+		</div>
+
+</section>
+
+
+
+
+{% endblock %}

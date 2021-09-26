@@ -1,0 +1,106 @@
+
+{% extends "ProyectoWebApp/base.html" %}
+   
+{% load static %}
+
+{% block content %}
+
+
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+<!------ Include the above in your HEAD tag ---------->
+<div class="container">
+<br>  <p class="text-center">More bootstrap 4 components on <a href="http://bootstrap-ecommerce.com/"> </a></p>
+<hr>
+
+
+<div class="card bg-light">
+<article class="card-body mx-auto" style="max-width: 400px;">
+	<h4 class="card-title mt-3 text-center"> BUSCAR LIBRO </h4>
+
+<form method="GET"> 
+
+	{% csrf_token %}
+
+<!--	{{form.as_p}}  --->
+
+	<div class="form-group input-group">
+		<p><b><h5>Login : &nbsp; </h5></b></p>				
+	</div> 
+	
+	<div class="form-group input-group">
+		<div class="input-group-prepend">
+			<span class="input-group-text"> <i class="fa fa-user"></i> </span>
+	    </div>
+		 {{form.login_usuario}} 
+       		<!-- <input name="" class="form-control" placeholder="Nombre de Usuario" type="text">--->
+    </div> 
+	<!-- form-group end.// -->
+    
+	<div class="form-group input-group">
+		<p><b><h5>Nombres : &nbsp; </h5></b></p>				
+	</div> 
+
+	<div class="form-group input-group">
+		<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		</div>
+		 {{form.nombres}}
+        	<!--<input name="" class="form-control" placeholder="Nombres" type="text">--->
+    </div>
+
+	<div class="form-group input-group">
+		<p><b><h5>Apellidos : &nbsp; </h5></b></p>				
+	</div> 
+
+	<div class="form-group input-group">
+		
+		<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		 </div>
+		 {{form.apellidos}}
+        	<!--<input name="" class="form-control" placeholder="Apellidos" type="text">--->
+    </div>
+	
+	
+	<!-- form-group// -->                                      
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block"> Buscar Libro  </button>
+    </div>      
+    
+</form>
+</article>
+</div>  
+
+</div> 
+
+</form>
+
+<table class="table table-bordered">
+	<thead>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+
+	</thead>
+	
+	<tbody>
+		{% if Usuario %}
+		{% for usuariolist in Usuario %}
+		<tr>
+			<td>{{ <Usuario class="nombre"></Usuario> }} </td>
+			<td></td>
+			<td></td>
+		</tr>
+		
+	</tbody>
+	
+
+</table>
+
+
+{% endblock %}
+

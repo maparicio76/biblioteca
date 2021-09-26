@@ -1,0 +1,225 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <title>Reflux HTML CSS Template</title>
+<!--
+Reflux Template
+https://templatemo.com/tm-531-reflux
+-->
+    <!-- Bootstrap core CSS -->
+    
+    <link href="{% static 'ProyectoWebApp/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Additional CSS Files 
+    <link href="{% static 'ProyectoWebApp/css/fontawesome.css'%}" rel="stylesheet"> 
+    <link href="{% static 'ProyectoWebApp/css/owl.css'%}" rel="stylesheet"> 
+    <link href="{% static 'ProyectoWebApp/css/lightbox.css'%}" rel="stylesheet"> 
+    
+  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="{% static 'ProyectoWebApp/css/templatemo-style.css'%}" rel="stylesheet"> 
+    
+    
+    
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav" >
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu" style="background: chocolate;">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container" style="background: chartreuse;">
+            
+            <div class="image"> <link href="" rel="stylesheet"> 
+              <a href="#"><img src="{% static 'ProyectoWebApp/img/author-image.jpg'%}" alt="" /></a>
+            </div>
+
+            <div class="author-content">
+              <h4>Reflux Me</h4>
+              <span>Web Designer</span>
+            </div>
+            
+            <nav class="main-nav" role="navigation" style="background-color: blue;">
+              <ul class="main-menu">
+                <li><a href="#section1">About Me</a></li>
+                <li><a href="#section2">What I’m good at</a></li>
+                <li><a href="#section3">My Work</a></li>
+                <li><a href="#section4">Contact Me</a></li>
+              </ul>
+            </nav>
+            
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="https://fb.com/templatemo"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-rss"></i></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="copyright-text">
+              <p>Copyright 2019 Reflux Design</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      
+
+      <section class="section about-me" data-section="section1">
+        <div class="container">
+          <div class="section-heading">
+            <h2 style="color: blue;">About Me</h2>
+            <div class="line-dec"></div>
+            <span  style="color: red;" > This is a Bootstrap v4.2.1 CSS Template for you. Edit and use
+              this layout for your site. Updated on 21 May 2019 for repeated main menu HTML code.
+
+              </span >
+          </div>
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                 <!--  <img src="{% static 'ProyectoWebApp/img/left-image.jpg'%}" alt="" /> -->
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>Reflux HTML CSS Template</h4>
+                  <p>
+                    Donec tristique feugiat lacus, at sollicitudin nunc euismod
+                    sed. Mauris viverra, erat non sagittis gravida, elit dui
+                    mollis ante, sit amet eleifend purus ligula eget eros. Sed
+                    tincidunt quam vitae neque pharetra dignissim eget ut
+                    libero.
+                  </p>
+                  <div class="white-button">
+                    <a href="#">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>Sed sagittis rhoncus velit</h4>
+                  <p>
+                    Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada fames ac turpis egestas. Vestibulum fermentum
+                    eleifend nibh, vitae sodales elit finibus pretium.
+                    Suspendisse potenti. Ut sollicitudin risus a sollicitudin
+                    semper.
+                  </p>
+                  <div class="white-button">
+                    <a href="#">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <!-- <img src="{% static 'ProyectoWebApp/img/right-image.jpg'%}" alt="" /> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+       
+      
+    </div>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'ProyectoWebApp/vendor/jquery/jquery.min.js'%}"></script>
+    <script src="{% static 'ProyectoWebApp/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+       <!-- Scripts 
+    <script src="{% static 'ProyectoWebApp/js/isotope.min.js'%}"></script>
+    <script src="{% static 'ProyectoWebApp/js/owl-carousel.js'%}"></script>
+    <script src="{% static 'ProyectoWebApp/js/lightbox.js'%}"></script>
+    <script src="{% static 'ProyectoWebApp/js/custom.js'%}"></script>
+
+        -->
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
+</html>
